@@ -1,64 +1,66 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Student Grading Management System</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Student Grading Management System</h1>
-        <p>Haramaya University</p>
+      <h1>Student Grading Management System</h1>
+      <p>Haramaya University</p>
     </header>
 
     <nav>
-        <a href="../../index.html">Home</a>
+      <a href="../../index.html">Home</a>
     </nav>
 
     <main>
-        <section>
-            <h2>Login to Your Account</h2>
+      <section>
+        <h2>Login to Your Account</h2>
 
-            <form action="#" method="post">
+        <form action="#" method="post">
+          <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </p>
 
-                <p>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username"
-                           name="username" required>
-                </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </p>
 
-                <p>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password"
-                           name="password" required>
-                </p>
+          <p>
+            <label for="role">Select Your Role:</label>
+            <select id="role" name="role" required>
+              <option value="">-- Select Role --</option>
+              <option value="admin">Administrator</option>
+              <option value="instructor">Instructor</option>
+              <option value="student">Student</option>
+            </select>
+          </p>
 
-                <p>
-                    <label for="role">Select Your Role:</label>
-                    <select id="role" name="role" required>
-                        <option value="">-- Select Role --</option>
-                        <option value="admin">Administrator</option>
-                        <option value="instructor">Instructor</option>
-                        <option value="student">Student</option>
-                    </select>
-                </p>
+          <button type="submit">Login</button>
+        </form>
 
-                <button type="submit">Login</button>
+        <p>
+          <a href="forgot-password.html">Forgot Password?</a>
+        </p>
+        <p>
+          New student?
+          <a href="register.html">Create an Account</a>
+        </p>
 
-            </form>
-
-            <p>
-                <a href="forgot-password.html">Forgot Password?</a>
-            </p>
-        </section>
+        <p>
+          Instructor?
+          <a href="instructor-request.html">Request an Account</a>
+        </p>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Student Grading Management System</p>
-        <p>Haramaya University</p>
+      <p>&copy; 2026 Student Grading Management System</p>
+      <p>Haramaya University</p>
     </footer>
-
-</body>
+  </body>
 </html>

@@ -28,52 +28,30 @@
     <main>
 
         <section>
-            <h2>Create New User Account</h2>
+            <h2>User Account Overview</h2>
 
-            <form action="#" method="post">
+            <article>
+                <h3>Total User Accounts</h3>
+                <p>536</p>
+            </article>
 
-                <p>
-                    <label for="full-name">Full Name:</label>
-                    <input type="text" id="full-name"
-                           name="full_name" required>
-                </p>
+            <article>
+                <h3>Active Accounts</h3>
+                <p>530</p>
+            </article>
 
-                <p>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username"
-                           name="username" required>
-                </p>
-
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"
-                           name="email" required>
-                </p>
-
-                <p>
-                    <label for="password">Temporary Password:</label>
-                    <input type="password" id="password"
-                           name="password" required>
-                </p>
-
-                <p>
-                    <label for="role">User Role:</label>
-                    <select id="role" name="role" required>
-                        <option value="">Select Role</option>
-                        <option value="admin">Administrator</option>
-                        <option value="instructor">Instructor</option>
-                        <option value="student">Student</option>
-                    </select>
-                </p>
-
-                <button type="submit">Create Account</button>
-                <button type="reset">Clear Form</button>
-
-            </form>
+            <article>
+                <h3>Suspended Accounts</h3>
+                <p>6</p>
+            </article>
         </section>
 
         <section>
             <h2>System User Accounts</h2>
+
+            <p>
+                View registered users, their assigned roles, and account statuses.
+            </p>
 
             <table border="1">
                 <caption>User Accounts (Demonstration Data)</caption>
@@ -86,6 +64,7 @@
                         <th>Email</th>
                         <th>Role</th>
                         <th>Account Status</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
 
@@ -97,6 +76,9 @@
                         <td>admin@example.com</td>
                         <td>Administrator</td>
                         <td>Active</td>
+                        <td>
+                            <button type="button" disabled>Protected Account</button>
+                        </td>
                     </tr>
 
                     <tr>
@@ -106,6 +88,9 @@
                         <td>mohammed@example.com</td>
                         <td>Instructor</td>
                         <td>Active</td>
+                        <td>
+                            <button type="button">Suspend</button>
+                        </td>
                     </tr>
 
                     <tr>
@@ -115,10 +100,62 @@
                         <td>abebe@example.com</td>
                         <td>Student</td>
                         <td>Active</td>
+                        <td>
+                            <button type="button">Suspend</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>U004</td>
+                        <td>Hana Bekele</td>
+                        <td>hana01</td>
+                        <td>hana@example.com</td>
+                        <td>Student</td>
+                        <td>Suspended</td>
+                        <td>
+                            <button type="button">Activate</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+        </section>
 
+        <section>
+            <h2>User Role Information</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Responsibilities</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Administrator</td>
+                        <td>
+                            Manage system users, verify account requests,
+                            manage courses, and oversee the system.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Instructor</td>
+                        <td>
+                            Enter and manage grades for assigned courses.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Student</td>
+                        <td>
+                            View academic results, grade reports,
+                            and submit grade review requests.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
     </main>

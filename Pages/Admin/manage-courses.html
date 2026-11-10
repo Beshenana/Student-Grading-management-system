@@ -28,7 +28,7 @@
     <main>
 
         <section>
-            <h2>Register New Course</h2>
+            <h2>Create New Course</h2>
 
             <form action="#" method="post">
 
@@ -56,13 +56,41 @@
                            name="department" required>
                 </p>
 
+                <button type="submit">Create Course</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Assign Course to Instructor</h2>
+
+            <p>
+                Assign available courses to approved instructors.
+            </p>
+
+            <form action="#" method="post">
+
                 <p>
-                    <label for="instructor">Assigned Instructor:</label>
-                    <input type="text" id="instructor"
-                           name="instructor" required>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course_id" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="CS301">Data Structures and Algorithms</option>
+                        <option value="CS302">Database Systems</option>
+                        <option value="IT201">Web Programming</option>
+                    </select>
                 </p>
 
-                <button type="submit">Register Course</button>
+                <p>
+                    <label for="instructor">Select Instructor:</label>
+                    <select id="instructor" name="instructor_id" required>
+                        <option value="">-- Select Instructor --</option>
+                        <option value="INS001">Mohammed Ali</option>
+                        <option value="INS002">Abebe Tadesse</option>
+                    </select>
+                </p>
+
+                <button type="submit">Assign Course</button>
                 <button type="reset">Clear Form</button>
 
             </form>
@@ -80,7 +108,7 @@
                         <th>Course Title</th>
                         <th>Credit Hours</th>
                         <th>Department</th>
-                        <th>Instructor</th>
+                        <th>Assigned Instructor</th>
                     </tr>
                 </thead>
 
@@ -106,7 +134,7 @@
                         <td>Web Programming</td>
                         <td>3</td>
                         <td>Information Technology</td>
-                        <td>Mohammed Ali</td>
+                        <td>Not Assigned</td>
                     </tr>
                 </tbody>
             </table>

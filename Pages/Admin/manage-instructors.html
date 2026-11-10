@@ -28,48 +28,64 @@
     <main>
 
         <section>
-            <h2>Register New Instructor</h2>
+            <h2>Instructor Account Requests</h2>
 
-            <form action="#" method="post">
+            <p>
+                Review instructor account requests and verify their
+                professional information before approval.
+            </p>
 
-                <p>
-                    <label for="instructor-id">Instructor ID:</label>
-                    <input type="text" id="instructor-id"
-                           name="instructor_id" required>
-                </p>
+            <table border="1">
+                <caption>Pending Instructor Requests</caption>
 
-                <p>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name"
-                           name="first_name" required>
-                </p>
+                <thead>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Full Name</th>
+                        <th>Staff ID</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
 
-                <p>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name"
-                           name="last_name" required>
-                </p>
+                <tbody>
+                    <tr>
+                        <td>REQ001</td>
+                        <td>Mohammed Ali</td>
+                        <td>HU-INS-001</td>
+                        <td>Computer Science</td>
+                        <td>mohammed@example.com</td>
+                        <td>Pending</td>
+                        <td>
+                            <button type="button">Approve</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
 
-                <p>
-                    <label for="department">Department:</label>
-                    <input type="text" id="department"
-                           name="department" required>
-                </p>
-
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"
-                           name="email" required>
-                </p>
-
-                <button type="submit">Register Instructor</button>
-                <button type="reset">Clear Form</button>
-
-            </form>
+                    <tr>
+                        <td>REQ002</td>
+                        <td>Abebe Tadesse</td>
+                        <td>HU-INS-002</td>
+                        <td>Information Technology</td>
+                        <td>abebe.t@example.com</td>
+                        <td>Pending</td>
+                        <td>
+                            <button type="button">Approve</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section>
-            <h2>Instructor Records</h2>
+            <h2>Approved Instructor Records</h2>
+
+            <p>
+                View approved instructors and manage their assigned courses.
+            </p>
 
             <table border="1">
                 <caption>Instructor List (Demonstration Data)</caption>
@@ -80,26 +96,65 @@
                         <th>Full Name</th>
                         <th>Department</th>
                         <th>Email</th>
+                        <th>Assigned Courses</th>
+                        <th>Account Status</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>INS001</td>
-                        <td>Mohammed Ali</td>
+                        <td>INS003</td>
+                        <td>Hassan Ahmed</td>
                         <td>Computer Science</td>
-                        <td>mohammed@example.com</td>
+                        <td>hassan@example.com</td>
+                        <td>Database Systems</td>
+                        <td>Active</td>
                     </tr>
 
                     <tr>
-                        <td>INS002</td>
-                        <td>Abebe Tadesse</td>
+                        <td>INS004</td>
+                        <td>Fatuma Ali</td>
                         <td>Information Technology</td>
-                        <td>abebe.t@example.com</td>
+                        <td>fatuma@example.com</td>
+                        <td>Web Programming</td>
+                        <td>Active</td>
                     </tr>
                 </tbody>
             </table>
+        </section>
 
+        <section>
+            <h2>Course Assignment</h2>
+
+            <p>
+                Assign courses to approved instructors.
+            </p>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="instructor">Select Instructor:</label>
+                    <select id="instructor" name="instructor_id" required>
+                        <option value="">-- Select Instructor --</option>
+                        <option value="INS003">Hassan Ahmed</option>
+                        <option value="INS004">Fatuma Ali</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course_id" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="CS301">Database Systems</option>
+                        <option value="CS302">Web Programming</option>
+                        <option value="CS303">Data Structures and Algorithms</option>
+                    </select>
+                </p>
+
+                <button type="submit">Assign Course</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
         </section>
 
     </main>

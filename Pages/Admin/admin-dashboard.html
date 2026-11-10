@@ -8,6 +8,16 @@
 </head>
 <body>
 
+    
+    <div class="logo">
+    <img
+        src="../../Assets/Images/Logo.jpg"
+        alt="SGMS Logo"
+        width="100"
+        height="100"
+    />
+</div>
+
     <header>
         <h1>Student Grading Management System</h1>
         <h2>Administrator Dashboard</h2>
@@ -47,19 +57,105 @@
             </article>
 
             <article>
-                <h3>Registered Users</h3>
-                <p>540</p>
+                <h3>Pending Account Requests</h3>
+                <p>12</p>
             </article>
+        </section>
+
+        <section>
+            <h2>Pending Student Registrations</h2>
+
+            <p>Review student registration requests before granting access.</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Full Name</th>
+                        <th>Department</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HU/001/18</td>
+                        <td>Abebe Kebede</td>
+                        <td>Computer Science</td>
+                        <td>3rd Year</td>
+                        <td>Pending</td>
+                        <td>
+                            <button type="button">Approve</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>HU/002/18</td>
+                        <td>Hana Bekele</td>
+                        <td>Information Technology</td>
+                        <td>2nd Year</td>
+                        <td>Pending</td>
+                        <td>
+                            <button type="button">Approve</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <a href="manage-students.html">View All Student Requests</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Pending Instructor Account Requests</h2>
+
+            <p>Verify instructor information and approve authorized requests.</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Full Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>INS001</td>
+                        <td>Mohammed Ali</td>
+                        <td>Computer Science</td>
+                        <td>mohammed@example.com</td>
+                        <td>Pending</td>
+                        <td>
+                            <button type="button">Approve</button>
+                            <button type="button">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <a href="manage-instructors.html">View All Instructor Requests</a>
+            </p>
         </section>
 
         <section>
             <h2>Administrative Activities</h2>
 
             <ul>
-                <li><a href="manage-students.html">Register and manage students</a></li>
-                <li><a href="manage-instructors.html">Register and manage instructors</a></li>
+                <li><a href="manage-students.html">Review and manage student accounts</a></li>
+                <li><a href="manage-instructors.html">Review and manage instructor accounts</a></li>
                 <li><a href="manage-courses.html">Create and manage courses</a></li>
-                <li><a href="manage-users.html">Manage system users</a></li>
+                <li><a href="manage-users.html">Manage user roles and account permissions</a></li>
             </ul>
         </section>
 
