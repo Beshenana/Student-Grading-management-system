@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - SGMS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Grading Management System</h1>
+        <h2>Manage System Users</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="manage-students.html">Manage Students</a></li>
+            <li><a href="manage-instructors.html">Manage Instructors</a></li>
+            <li><a href="manage-courses.html">Manage Courses</a></li>
+            <li><a href="manage-users.html">Manage Users</a></li>
+            <li><a href="../Authentication/login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Create New User Account</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name"
+                           name="full_name" required>
+                </p>
+
+                <p>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username"
+                           name="username" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           name="email" required>
+                </p>
+
+                <p>
+                    <label for="password">Temporary Password:</label>
+                    <input type="password" id="password"
+                           name="password" required>
+                </p>
+
+                <p>
+                    <label for="role">User Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="admin">Administrator</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="student">Student</option>
+                    </select>
+                </p>
+
+                <button type="submit">Create Account</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>System User Accounts</h2>
+
+            <table border="1">
+                <caption>User Accounts (Demonstration Data)</caption>
+
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Full Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Account Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>U001</td>
+                        <td>Admin User</td>
+                        <td>admin01</td>
+                        <td>admin@example.com</td>
+                        <td>Administrator</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>U002</td>
+                        <td>Mohammed Ali</td>
+                        <td>mohammed01</td>
+                        <td>mohammed@example.com</td>
+                        <td>Instructor</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>U003</td>
+                        <td>Abebe Bekele</td>
+                        <td>abebe01</td>
+                        <td>abebe@example.com</td>
+                        <td>Student</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Grading Management System</p>
+        <p>Haramaya University</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Report - SGMS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Grading Management System</h1>
+        <h2>Academic Grade Report</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="academic-results.html">Academic Results</a></li>
+            <li><a href="grade-report.html">Grade Report</a></li>
+            <li><a href="grade-review.html">Grade Review</a></li>
+            <li><a href="../Authentication/login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Student Details</h2>
+
+            <p><strong>Student Name:</strong> Abebe Bekele</p>
+            <p><strong>Student ID:</strong> HU001</p>
+            <p><strong>Department:</strong> Computer Science</p>
+            <p><strong>Academic Year:</strong> 2026/2027</p>
+        </section>
+
+        <section>
+            <h2>Academic Performance Summary</h2>
+
+            <table border="1">
+                <caption>Grade Summary (Demonstration Data)</caption>
+
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credit Hours</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CS301</td>
+                        <td>Data Structures and Algorithms</td>
+                        <td>3</td>
+                        <td>84</td>
+                        <td>A</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS302</td>
+                        <td>Database Systems</td>
+                        <td>3</td>
+                        <td>75</td>
+                        <td>B</td>
+                    </tr>
+
+                    <tr>
+                        <td>IT201</td>
+                        <td>Web Programming</td>
+                        <td>3</td>
+                        <td>89</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Overall Performance</h2>
+
+            <p><strong>Total Registered Credits:</strong> 9</p>
+            <p><strong>Completed Courses:</strong> 3</p>
+            <p><strong>Average Mark:</strong> 82.67%</p>
+
+            <p>
+                Note: This is a demonstration report.
+                Official GPA calculations will depend on the
+                approved grading scale and academic rules.
+            </p>
+        </section>
+
+        <section>
+            <h2>Report Actions</h2>
+
+            <button type="button" onclick="window.print()">
+                Print Grade Report
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Grading Management System</p>
+        <p>Haramaya University</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Instructors - SGMS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Grading Management System</h1>
+        <h2>Manage Instructors</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="manage-students.html">Manage Students</a></li>
+            <li><a href="manage-instructors.html">Manage Instructors</a></li>
+            <li><a href="manage-courses.html">Manage Courses</a></li>
+            <li><a href="manage-users.html">Manage Users</a></li>
+            <li><a href="../Authentication/login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Register New Instructor</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="instructor-id">Instructor ID:</label>
+                    <input type="text" id="instructor-id"
+                           name="instructor_id" required>
+                </p>
+
+                <p>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name"
+                           name="first_name" required>
+                </p>
+
+                <p>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name"
+                           name="last_name" required>
+                </p>
+
+                <p>
+                    <label for="department">Department:</label>
+                    <input type="text" id="department"
+                           name="department" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           name="email" required>
+                </p>
+
+                <button type="submit">Register Instructor</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Instructor Records</h2>
+
+            <table border="1">
+                <caption>Instructor List (Demonstration Data)</caption>
+
+                <thead>
+                    <tr>
+                        <th>Instructor ID</th>
+                        <th>Full Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>INS001</td>
+                        <td>Mohammed Ali</td>
+                        <td>Computer Science</td>
+                        <td>mohammed@example.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>INS002</td>
+                        <td>Abebe Tadesse</td>
+                        <td>Information Technology</td>
+                        <td>abebe.t@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Grading Management System</p>
+        <p>Haramaya University</p>
+    </footer>
+
+</body>
+</html>

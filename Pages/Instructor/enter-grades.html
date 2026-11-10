@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Grades - SGMS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Grading Management System</h1>
+        <h2>Enter Student Grades</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="instructor-dashboard.html">Dashboard</a></li>
+            <li><a href="enter-grades.html">Enter Grades</a></li>
+            <li><a href="grade-records.html">Grade Records</a></li>
+            <li><a href="../Authentication/login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Grade Entry Form</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="CS301">CS301 - Data Structures and Algorithms</option>
+                        <option value="CS302">CS302 - Database Systems</option>
+                        <option value="IT201">IT201 - Web Programming</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student_id" required>
+                </p>
+
+                <p>
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" name="student_name" required>
+                </p>
+
+                <p>
+                    <label for="assignment">Assignment (10 marks):</label>
+                    <input type="number" id="assignment" name="assignment"
+                           min="0" max="10" required>
+                </p>
+
+                <p>
+                    <label for="quiz">Quiz (10 marks):</label>
+                    <input type="number" id="quiz" name="quiz"
+                           min="0" max="10" required>
+                </p>
+
+                <p>
+                    <label for="midterm">Midterm (30 marks):</label>
+                    <input type="number" id="midterm" name="midterm"
+                           min="0" max="30" required>
+                </p>
+
+                <p>
+                    <label for="final">Final Exam (50 marks):</label>
+                    <input type="number" id="final" name="final"
+                           min="0" max="50" required>
+                </p>
+
+                <button type="submit">Submit Grades</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Assessment Weight Distribution</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Assessment</th>
+                        <th>Maximum Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Assignment</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Quiz</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Midterm</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Final Examination</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>100</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Grading Management System</p>
+        <p>Haramaya University</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Review - SGMS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Grading Management System</h1>
+        <h2>Grade Review Request</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="academic-results.html">Academic Results</a></li>
+            <li><a href="grade-report.html">Grade Report</a></li>
+            <li><a href="grade-review.html">Grade Review</a></li>
+            <li><a href="../Authentication/login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Submit a Grade Review Request</h2>
+
+            <p>
+                Use this form to explain why you believe
+                a published course grade should be reviewed.
+            </p>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id"
+                           name="student_id" required>
+                </p>
+
+                <p>
+                    <label for="course-code">Course Code:</label>
+                    <input type="text" id="course-code"
+                           name="course_code" required>
+                </p>
+
+                <p>
+                    <label for="current-grade">Published Grade:</label>
+                    <input type="text" id="current-grade"
+                           name="current_grade" required>
+                </p>
+
+                <p>
+                    <label for="reason">Reason for Review:</label>
+                    <textarea id="reason" name="reason"
+                              rows="6" cols="40"
+                              placeholder="Explain your reason..."
+                              required></textarea>
+                </p>
+
+                <p>
+                    <label for="request-date">Request Date:</label>
+                    <input type="date" id="request-date"
+                           name="request_date" required>
+                </p>
+
+                <button type="submit">Submit Review Request</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Review Request Information</h2>
+
+            <table border="1">
+                <caption>Review Requests (Demonstration Data)</caption>
+
+                <thead>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Course Code</th>
+                        <th>Request Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>REV001</td>
+                        <td>CS301</td>
+                        <td>2026-11-05</td>
+                        <td>Under Review</td>
+                    </tr>
+
+                    <tr>
+                        <td>REV002</td>
+                        <td>CS302</td>
+                        <td>2026-11-07</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Grading Management System</p>
+        <p>Haramaya University</p>
+    </footer>
+
+</body>
+</html>

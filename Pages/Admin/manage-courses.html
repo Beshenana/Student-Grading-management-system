@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses - SGMS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Grading Management System</h1>
+        <h2>Manage Courses</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="manage-students.html">Manage Students</a></li>
+            <li><a href="manage-instructors.html">Manage Instructors</a></li>
+            <li><a href="manage-courses.html">Manage Courses</a></li>
+            <li><a href="manage-users.html">Manage Users</a></li>
+            <li><a href="../Authentication/login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Register New Course</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="course-code">Course Code:</label>
+                    <input type="text" id="course-code"
+                           name="course_code" required>
+                </p>
+
+                <p>
+                    <label for="course-title">Course Title:</label>
+                    <input type="text" id="course-title"
+                           name="course_title" required>
+                </p>
+
+                <p>
+                    <label for="credit-hour">Credit Hours:</label>
+                    <input type="number" id="credit-hour"
+                           name="credit_hour" min="1" required>
+                </p>
+
+                <p>
+                    <label for="department">Department:</label>
+                    <input type="text" id="department"
+                           name="department" required>
+                </p>
+
+                <p>
+                    <label for="instructor">Assigned Instructor:</label>
+                    <input type="text" id="instructor"
+                           name="instructor" required>
+                </p>
+
+                <button type="submit">Register Course</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Available Courses</h2>
+
+            <table border="1">
+                <caption>Course Records (Demonstration Data)</caption>
+
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credit Hours</th>
+                        <th>Department</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CS301</td>
+                        <td>Data Structures and Algorithms</td>
+                        <td>3</td>
+                        <td>Computer Science</td>
+                        <td>Mohammed Ali</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS302</td>
+                        <td>Database Systems</td>
+                        <td>3</td>
+                        <td>Computer Science</td>
+                        <td>Abebe Tadesse</td>
+                    </tr>
+
+                    <tr>
+                        <td>IT201</td>
+                        <td>Web Programming</td>
+                        <td>3</td>
+                        <td>Information Technology</td>
+                        <td>Mohammed Ali</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Grading Management System</p>
+        <p>Haramaya University</p>
+    </footer>
+
+</body>
+</html>
